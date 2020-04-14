@@ -1,0 +1,292 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+</head>
+
+<body>
+    <div class="header justified">
+        <div class="title">
+            <h1> My web Page </h1>
+        </div>
+        <div class="note">
+            <div class="border">
+                <span>This is made in VJTI </span><br>
+                <span>E-mail:vjti@gmail.com</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="lhs">
+            <button> <a> Home </a> </button>
+            <button> <a> Department </a> </button>
+            <button> <a> Facilities </a> </button>
+            <button> <a> Others </a> </button>
+        </div>
+        <div class="rhs">
+                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Password">
+            <button id="left"> <a> Login </a> </button>
+        </div>
+    </div>
+    <div class="main-block">
+        <div class="side nav">
+            <button onclick="register()"> <a> Registration </a> </button>
+            <button onclick="table()"> <a> Tabular Data </a> </button>
+            <button onclick="mixer()"> <a> Colour Maker </a> </button>
+            <button onclick="contactForm()"> <a> Contact Form </a> </button>
+        </div>
+        <div class="center-block">
+            <div id="Registration">
+                <div class="app">
+                    <div class="header">
+                        <h3>
+                            Client Login
+                            <div class="floatRight"><span> &times </span> </div>
+                        </h3>
+                    </div>
+                    <div class="subHeading">
+                        <h3>
+                            You are almost done ! One more step
+                            <hr>
+                        </h3>
+                    </div>
+                    <div class="form">
+                        <input type="text" placeholder="Username"><br>
+                        <input type="text" placeholder="Password"><br>
+                    </div>
+                    <div>
+                        <span id="floatLeftChk"><input type="checkbox" value="Remember Me">Remember Me </span>
+                        <span id="floatRightPwd"> Forgot a Password? </span>
+                    </div>
+                    <br>
+                    <div>
+                        <button class="loginButton"> LOG IN </button>
+                        <hr>
+                        <h3>
+                            Login with your facebook Or Twitter accounts
+                        </h3>
+                        <button id="facebook"> FACEBOOK </button>
+                        <button id="twitter"> TWITTER </button>
+                    </div>
+                    <div class="footer">
+                        Want a new account?
+                        <button id="signUp"> Sign Up </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="TabularData">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Contact</th>
+                        <th>College</th>
+                    </tr>
+                    <tr>
+                        <td>XYZ ABC</td>
+                        <td>+91 99999 99999</td>
+                        <td>VJTI</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ ABC</td>
+                        <td>+91 99999 99999</td>
+                        <td>VJTI</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ ABC</td>
+                        <td>+91 99999 99999</td>
+                        <td>VJTI</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ ABC</td>
+                        <td>+91 99999 99999</td>
+                        <td>VJTI</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ ABC</td>
+                        <td>+91 99999 99999</td>
+                        <td>VJTI</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ ABC</td>
+                        <td>+91 99999 99999</td>
+                        <td>VJTI</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ ABC</td>
+                        <td>+91 99999 99999</td>
+                        <td>VJTI</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ ABC</td>
+                        <td>+91 99999 99999</td>
+                        <td>VJTI</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ ABC</td>
+                        <td>+91 99999 99999</td>
+                        <td>VJTI</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ ABC</td>
+                        <td>+91 99999 99999</td>
+                        <td>VJTI</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ ABC</td>
+                        <td>+91 99999 99999</td>
+                        <td>VJTI</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ ABC</td>
+                        <td>+91 99999 99999</td>
+                        <td>VJTI</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ ABC</td>
+                        <td>+91 99999 99999</td>
+                        <td>VJTI</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ ABC</td>
+                        <td>+91 99999 99999</td>
+                        <td>VJTI</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ ABC</td>
+                        <td>+91 99999 99999</td>
+                        <td>VJTI</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ ABC</td>
+                        <td>+91 99999 99999</td>
+                        <td>VJTI</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="ColourMaker">
+                <div id="colorBlock" class=" mixer">
+                    <h1> Color Mixer </h1>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="255" value="255" class="slider" id="redSlider">
+                        <p>Red Value: <span id="redValue"></span></p><br>
+                        <input type="range" min="0" max="255" value="255" class="slider" id="greenSlider">
+                        <p>Green Value: <span id="greenValue"></span></p><br>
+                        <input type="range" min="0" max="255" value="255" class="slider" id="blueSlider">
+                        <p>Blue Value: <span id="blueValue"></span></p><br>
+                    </div>
+                    <div>
+                        <p id="rgbVal"> </p>
+                        <p id="hexVal"> </p>
+                    </div>
+                </div>
+            </div>
+            <div id="contactForm">
+
+                <div class="container">
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="side space">
+
+        </div>
+
+    </div>
+    <div class="footerBottom">
+        </div>
+    <script>
+        var none = 'none';
+        function register() {
+            document.getElementById('Registration').style.display = 'block';
+            document.getElementById('TabularData').style.display = none;
+            document.getElementById('ColourMaker').style.display = none;
+            document.getElementById('contactForm').style.display = none;
+        }
+        function table() {
+            document.getElementById('Registration').style.display = none;
+            document.getElementById('TabularData').style.display = 'block';
+            document.getElementById('ColourMaker').style.display = none;
+            document.getElementById('contactForm').style.display = none;
+        }
+        function mixer() {
+            document.getElementById('Registration').style.display = 'none';
+            document.getElementById('TabularData').style.display = none;
+            document.getElementById('ColourMaker').style.display = 'block';
+            document.getElementById('contactForm').style.display = none;
+        }
+        function contactForm() {
+            document.getElementById('Registration').style.display = none;
+            document.getElementById('TabularData').style.display = none;
+            document.getElementById('ColourMaker').style.display = none;
+            document.getElementById('contactForm').style.display = 'block';
+        }
+        var sliderRed = document.getElementById("redSlider");
+        var sliderGreen = document.getElementById("greenSlider");
+        var sliderBlue = document.getElementById("blueSlider");
+        var outputRed = document.getElementById("redValue");
+        var outputGreen = document.getElementById("greenValue");
+        var outputBlue = document.getElementById("blueValue");
+        var block = document.getElementsByClassName("colorBlock");
+        outputRed.innerHTML = sliderRed.value; // Display the default slider value
+        outputGreen.innerHTML = sliderGreen.value; // Display the default slider value
+        outputBlue.innerHTML = sliderBlue.value; // Display the default slider value
+
+        // Update the current slider value (each time you drag the slider handle)
+        sliderRed.oninput = function () {
+            outputRed.innerHTML = this.value;
+            update();
+        }
+        sliderGreen.oninput = function () {
+            outputGreen.innerHTML = this.value;
+            update();
+
+        }
+        sliderBlue.oninput = function () {
+            outputBlue.innerHTML = this.value;
+            update();
+        }
+        function getRgb() {
+            return "rgb(" + sliderRed.value + "," + sliderGreen.value + "," + sliderBlue.value + ")";
+        }
+        function getHex() {
+            var red = parseInt(sliderRed.value, 10).toString(16).toUpperCase();
+            var green = parseInt(sliderGreen.value, 10).toString(16).toUpperCase();
+            var blue = parseInt(sliderBlue.value, 10).toString(16).toUpperCase();
+            return "#" + red + green + blue;
+        }
+        function update() {
+            document.getElementById('colorBlock').style.borderColor = getRgb();
+            document.getElementById("rgbVal").innerHTML = getRgb();
+            document.getElementById("hexVal").innerHTML = getHex();
+        }
+
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,350 @@
+body {
+  background: #000000;
+  color: white;
+  overflow: hidden;
+}
+
+body > * {
+  background: #5f5f5f;
+}
+
+.lhs {
+  position: relative;
+  width: 70%;
+  float: left;
+  margin-left: -1px;
+  margin-right: 0;
+}
+.center {
+  text-align: center;
+}
+.navbar button {
+  display: inline-block;
+  width: 20%;
+  background-color: #47474799;
+  border: none;
+  color: white;
+  font-size: 15pt;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-right: -4px;
+}
+.navbar button:first-child {
+  margin-left: 2px;
+}
+
+.nav button {
+  width: 100%;
+  background-color: #47474799;
+  border: none;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 15pt;
+}
+
+.rhs {
+  width: 35%;
+  float: right;
+  position: absolute;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+.rhs >input[type="text"] {
+    border: none;
+    box-sizing: border-box;
+    width: 30%;
+    padding: 5px;
+    margin: 5px;
+    margin-right: 0;
+    height:45px;
+    border-radius: 2px;
+  }
+#left {
+   float: right;
+   width: 35%;
+    
+}
+.navbar {
+  position: relative;
+  height: 55px;
+  border: 2px black solid;
+  margin-left: -2px;
+}
+.main-block {
+  position: relative;
+  height: 75vh;
+
+  padding-top: 10px;
+  border: none;
+  background-color: black;
+}
+
+.side {
+  position: relative;
+  margin-top: 10px;
+  width: 20%;
+  height: inherit;
+}
+.nav {
+  float: left;
+}
+.space {
+  float: right;
+}
+.center-block {
+  position: absolute;
+  height: inherit;
+  top: inherit;
+  margin-top: 10px;
+  left: calc(20% + 20px);
+  right: calc(20% + 20px);
+}
+#ColourMaker,
+#TabularData,
+#contactForm {
+  display: none;
+}
+.title {
+  width: 60%;
+  margin-left: -5px;
+  display: inline-block;
+  text-align: center;
+}
+.note {
+  position: flex;
+  width: 40%;
+  margin-right: -5px;
+  display: inline-block;
+  text-align: right;
+  padding-right: 5px;
+}
+
+h1 {
+  display: inline;
+}
+justified {
+  text-align: justify;
+}
+.header {
+  border: #5f5f5f solid 3px;
+  background: #5f5f5f;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.main-block > * {
+  background: #5f5f5f;
+}
+#Registration {
+  padding: 20px;
+  padding-bottom: 0px;
+}
+.app {
+  width: 80%;
+  min-width: 400px;
+  margin: 10px auto;
+  background: #66666666;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+#Registration hr {
+  width: 50%;
+  height: 3px;
+  background-color: floralwhite;
+  border-radius: 2px;
+}
+#Registration input[type="text"] {
+  border: none;
+  width: 90%;
+  margin: 10px;
+  min-height: 30px;
+  padding: 10pt;
+  border-radius: 10px;
+}
+#Registration .floatRight {
+  text-align: right;
+  margin-top: -3%;
+  margin-right: 5%;
+  color: #eeeeeeee;
+}
+#Registration .header {
+  background-color: rgba(56, 56, 56, 0.712);
+  height: fit-content;
+  line-height: 20%;
+  vertical-align: middle;
+  color: floralwhite;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  padding-top: 10px;
+}
+#Registration .footer {
+  background-color: rgba(56, 56, 56, 0.612);
+  height: fit-content;
+  vertical-align: middle;
+  text-align: center;
+  color: floralwhite;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  padding-top: 10px;
+}
+#Registration #floatRightPwd {
+  text-align: right;
+  display: inline;
+  padding: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: floralwhite;
+}
+#Registration #floatLeftChk {
+  text-align: left;
+  display: inline;
+  margin-left: 5%;
+  margin-right: 10%;
+  color: floralwhite;
+}
+
+#Registration h3 {
+  color: floralwhite;
+}
+a {
+  text-decoration: none;
+  text-align: right;
+  color: #999;
+}
+#Registration .buttons {
+  display: block-inline;
+  margin: 10%;
+  padding: 2 rem;
+  width: 40%;
+  border: 13 px gray solid;
+  /* background: #aaa;
+    color: white; */
+}
+
+#Registration .center {
+  text-align: center;
+}
+#Registration button {
+  width: 90%;
+  height: 20pt;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2%;
+  border-radius: 10px;
+  color: floralwhite;
+  background-color: rgb(153, 0, 255);
+  outline: none;
+  border: none;
+}
+#Registration #facebook {
+  width: 40%;
+  margin: 3%;
+  background-color: rgb(0, 38, 209);
+  color: floralwhite;
+}
+#Registration #twitter {
+  width: 40%;
+  margin: 3%;
+  background-color: #00aced;
+  color: floralwhite;
+}
+#Registration #signUp {
+  width: 30%;
+  margin: 3%;
+  background-color: #7bb80c;
+}
+#ColourMaker .mixer {
+  padding: 15%;
+  width: 40%;
+  height: fit-content;
+  /* background-color:white; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#ColourMaker input {
+  width: 80%;
+}
+#ColourMaker #colorBlock {
+  border: transparent 3px solid;
+}
+
+table {
+  font-family: arial, sans-serif;
+  font-size: 20pt;
+  border-collapse: collapse;
+  width: 95%;
+  margin:10px auto;
+}
+
+td,
+th {
+  border: 1px solid #444444;
+  text-align: left;
+  padding: 8px;
+}
+tr{
+    padding: 5px;
+
+}
+
+tr:nth-child(even) {
+  background-color: #444444;
+}
+#TabularData{
+    overflow-y: scroll;
+    height:inherit;
+}
+table{
+    overflow: hidden;
+}
+
+#contactForm * {box-sizing: border-box;
+color: white;}
+
+#contactForm input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#contactForm input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contactForm input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#contactForm .container {
+  border-radius: 5px;
+  /* background-color: #f2f2f2; */
+  padding: 20px;
+  width:90%;
+  margin:20px auto;
+}
+
+.footerBottom{
+    position: relative;
+    margin-top: 20px;
+    height: 7vh;
+    background-color: #5f5f5f;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Colour Mixer</title>
+</head>
+<body  style="background-color: #e62739">
+<h1 style = "color: #e1e8f0" ><center>Colour Mixer</center></h1>
+<center><div id = "bdisplay"> 
+    <div class="slidecontainer" style="margin-top: 10px">
+    <div><p><center style = "color: tomato;">Red</center></p></div>
+    <center><input type="range" min="0" max="255" step="1" id="red" value="255" class="slider"></center>
+    <div><p><center style = "color: mediumseagreen;">Green</center></p></div>
+    <center><input type="range" min="0" max="255" step="1" id="green" value="255" class="slider"></center>
+    <div><p><center style = "color: dodgerblue;">Blue</center></p></div>
+    <center><input type="range" min="0" max="255" step="1" id="blue" value="255" class="slider"></center>
+    <p><center style = "color: black;"  id = "rgb1">RGB: (255,255,255)</center></p>
+    <p><center style = "color: black;" id = "hex">Hex: #FFFFFF</center></p>
+    <center><div id = "display"></div></center>
+</div>
+    </div></center>
+
+<script type="text/javascript">
+    var input = document.querySelectorAll("input");
+    
+  var rgbToHex = function (rgb) { 
+  var hex = Number(rgb).toString(16).toUpperCase();
+  if (hex.length < 2) {
+       hex = "0" + hex;
+  }
+  return hex;
+};
+var fullColorHex = function(r,g,b) {   
+  var red = rgbToHex(r);
+  var green = rgbToHex(g);
+  var blue = rgbToHex(b);
+  return red+green+blue;
+};
+        for(var i = 0; i < input.length; i++){
+        input[i].addEventListener("input", function(){
+            var red = document.getElementById("red").value,
+                green = document.getElementById("green").value,
+                blue = document.getElementById("blue").value;
+                var display = document.getElementById("display");
+                document.getElementById("rgb1").innerHTML = "RGB: (" + red + ", " + green + ", " + blue + ")";
+                document.getElementById("hex").innerHTML = "Hex: #" + fullColorHex(red,green,blue);
+            display.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+        });
+    }
+</script>
+ 
+<style type="text/css">
+body{
+    font-family: "Times New Roman", Times, serif;
+}
+.slidecontainer {width: 100%;}
+.slider {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;}
+.slider:hover {
+  opacity: 1;}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #000000;
+  cursor: pointer;}
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #ff0000;
+  cursor: pointer;}
+#display{
+    width: 50%;
+    height: 200px;
+    background-color: #ffffff;
+    transition: background 100ms;
+    margin-top: 30px;
+    margin-left: 10px;
+    border: 3px solid #000;
+}
+#bdisplay{
+    width: 60%;
+    height: 625px;
+    background-color: #e1e8f0;
+    border: 3px solid #000;
+}
+input{
+    display: block;
+    width: 100%;
+}
+</style>
+</body>
+</html>

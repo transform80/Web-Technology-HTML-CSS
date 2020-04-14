@@ -1,0 +1,41 @@
+<html>
+<head><script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<title>Ceaser Cipher</title></head>
+<body style="text-align:center;margin:60px">
+<h2>Caesar Cipher</h2>
+<br>
+<p><b>Secret message:</b> <input id="text" size="80"></p>
+<p><b>Shift by key:</b> <input id="key" size="2" value="1"></p>
+<br>
+<h2>Encoded message</h2>
+   <p><span id="output" style="color:red" size="10"></span></p>
+
+<script src="jquery.js"></script>
+
+<script>
+$('input').keyup(function() {
+  var k = Number($('#key').val());
+  if (!(k >=0 && k < 26)) {
+    $('#output').html('Key should be between 0 and 25');
+    return;
+  }
+  var secret = $('#text').val().toLowerCase();
+  var encoded = '';
+  var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  for (var j = 0; j < secret.length; j += 1) {
+    var nextchar = secret.charAt(j);
+    var index = alphabet.indexOf(nextchar);
+    if (index >= 0) {
+      var shifted = (index + k) % 26;
+      encoded += alphabet.charAt(shifted);
+    } else {
+      encoded += nextchar;
+    }
+  }
+  $('#output').html(encoded);
+});
+</script>
+
+</body>
+</html>
+​
